@@ -29,34 +29,7 @@ const data = [
   { img: "/pic5.jpg",  description: "Another year older,cuter and brighter than before 🥹May life surprise you with happiness and so much more🎁" },
   { img: "/pic6.jpg",  description: "May your smile always shine brighter than the stars above ✨And may your life be filled with endless love 💗" },
 ];
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: true,
 
-  nextArrow: <Arrow dir="next" />,
-  prevArrow: <Arrow dir="prev" />,
-
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
 export default function Memories({ goToWish }) {
   return (
     <div className="min-h-screen w-full bg-linear-to-b from-rose-50 via-pink-100 to-rose-200 px-4! py-6! sm:px-8!">
@@ -80,13 +53,24 @@ export default function Memories({ goToWish }) {
           [&_.slick-dots_li_button:before]:opacity-100!
         "
       >
-        <Slider
+<Slider
   dots={true}
   infinite={true}
   speed={500}
-  slidesToShow={1}
+  slidesToShow={3}
   slidesToScroll={1}
-  arrows={false}
+  arrows={true}
+  nextArrow={<Arrow dir="next" />}
+  prevArrow={<Arrow dir="prev" />}
+  responsive={[
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ]}
 >
           {data.map((d, index) => (
             <div key={index} className="h-full py-4!">
