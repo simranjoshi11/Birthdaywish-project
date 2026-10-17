@@ -86,7 +86,7 @@ export default function Letter({ goToWish }) {
     <button
     onClick={goToWish}
       type="button"
-      className="h-10 w-40 cursor-pointer rounded-xl border-2 border-black bg-red-500 font-serif text-xl font-bold italic text-white transition-colors duration-300 hover:bg-pink-700 sm:h-8 sm:w-35"
+      className="h-10 w-40 cursor-pointer rounded-xl border-2 border-amber-50 bg-linear-to-r from-pink-500 via-rose-400 to-pink-500  font-serif text-xl font-bold italic text-white transition-colors duration-300 hover:bg-pink-700 sm:h-8 sm:w-35"
     >
       next gift
     </button>

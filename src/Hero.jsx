@@ -24,7 +24,7 @@ export default function Hero({ setShowHero }) {
       <h1 className="w-full text-center font-serif italic text-3xl font-extrabold text-pink-900 sm:text-5xl">
         Aaj Tumhara Birthday Hai kya??
       </h1>
-      <span className="absolute right-10 top-32 text-8xl sm:right-5 sm:top-4 sm:text-3xl">
+      <span className="absolute right-10 top-32 text-6xl sm:right-5 sm:top-2 sm:text-3xl">
               💗
             </span>
                 <span className="absolute left-3 top-3 text-5xl sm:left-80 sm:top-40 sm:text-3xl">
