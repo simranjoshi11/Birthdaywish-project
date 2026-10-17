@@ -57,20 +57,11 @@ export default function Memories({ goToWish }) {
   dots={true}
   infinite={true}
   speed={500}
-  slidesToShow={3}
+  slidesToShow={window.innerWidth <= 640 ? 1 : window.innerWidth <= 1024 ? 2 : 3}
   slidesToScroll={1}
   arrows={true}
   nextArrow={<Arrow dir="next" />}
   prevArrow={<Arrow dir="prev" />}
-  responsive={[
-    {
-      breakpoint: 640,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ]}
 >
           {data.map((d, index) => (
             <div key={index} className="h-full py-4!">
