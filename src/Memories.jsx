@@ -36,11 +36,25 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
+
   nextArrow: <Arrow dir="next" />,
   prevArrow: <Arrow dir="prev" />,
+
   responsive: [
-    { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
-    { breakpoint: 768,  settings: { slidesToShow: 1, slidesToScroll: 1 } },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
   ],
 };
 export default function Memories({ goToWish }) {
@@ -66,7 +80,14 @@ export default function Memories({ goToWish }) {
           [&_.slick-dots_li_button:before]:opacity-100!
         "
       >
-        <Slider {...settings}>
+        <Slider
+  dots={true}
+  infinite={true}
+  speed={500}
+  slidesToShow={1}
+  slidesToScroll={1}
+  arrows={false}
+>
           {data.map((d, index) => (
             <div key={index} className="h-full py-4!">
               <div className="mx-auto! flex h-full max-w-sm flex-col overflow-hidden rounded-3xl border border-pink-200 bg-white/90 shadow-xl shadow-pink-300/50 transition duration-300 hover:shadow-2xl hover:shadow-pink-400/50">
