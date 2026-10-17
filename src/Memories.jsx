@@ -39,11 +39,11 @@ const settings = {
   nextArrow: <Arrow dir="next" />,
   prevArrow: <Arrow dir="prev" />,
   responsive: [
-    { breakpoint: 1024, settings: { slidesToShow: 2 } },
-    { breakpoint: 640,  settings: { slidesToShow: 1 } },
+    { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+    { breakpoint: 768,  settings: { slidesToShow: 1, slidesToScroll: 1 } },
   ],
 };
-export default function Memories() {
+export default function Memories({ goToWish }) {
   return (
     <div className="min-h-screen w-full bg-linear-to-b from-rose-50 via-pink-100 to-rose-200 px-4! py-6! sm:px-8!">
       <h1 className="mb-2! text-center font-serif text-4xl font-extrabold italic text-rose-800 sm:text-6xl">
@@ -99,6 +99,7 @@ export default function Memories() {
           alt="cutie"
         />
         <button
+        onClick={goToWish}
           type="button"
           className="h-8 w-35 cursor-pointer rounded-xl border-2 border-black bg-red-500 font-serif text-xl font-bold italic text-white transition-colors duration-300 hover:bg-pink-700"
         >

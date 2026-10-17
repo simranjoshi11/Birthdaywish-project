@@ -7,7 +7,6 @@ import Memories from "./Memories"
 
 //  import {motion,useScroll} from "motion/react";
 
-
 function App() {
 
   const goToWish = () => {
