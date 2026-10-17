@@ -35,7 +35,7 @@ const timer = setTimeout(()=>{
   },
 });
 confetti({
-  particleCount: 100,
+  particleCount: 300,
   angle: 60,
   spread: 80,
   startVelocity: 60,
@@ -43,7 +43,7 @@ confetti({
 });
 
 confetti({
-  particleCount: 100,
+  particleCount: 300,
   angle: 120,
   spread: 80,
   startVelocity: 60,
@@ -77,7 +77,7 @@ useEffect(() => {
         // Countdown khatam hone ke baad
        <div className="relative flex min-h-dvh w-full flex-col items-center justify-center bg-[url('https://i.pinimg.com/736x/c7/2b/f3/c72bf37e44bf2f4ec37bff3f9e1bd69f.jpg')] bg-cover bg-center bg-no-repeat">
 
-  <div className="absolute inset-0 overflow-hidden bg-white/80 sm:bg-white/60">
+  <div className="absolute inset-0 overflow-hidden bg-white/50 sm:bg-white/60">
 
     {/* Heading */}
     <div className="relative z-20 pt-8! sm:pt-6!">
