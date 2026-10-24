@@ -22,12 +22,12 @@ function Arrow({ onClick, dir }) {
 }
 
 const data = [
-  { img: "/pic1.webp", description: "May you always be loved more than words can say And may beautiful moments find you every day 🌹" },
-  { img: "/pic2.webp", description: "May every little dream of yours come true And may happiness always find its way to you 💕" },
-  { img: "/pic3.jpg",  description: "You deserve all the magic this world can bring ✨May your heart always have a reason to sing 🎶" },
-  { img: "/pic4.jpg",  description: "May your days be filled with giggles and sunshine ☀️And may your life stay beautiful and divine 💖" },
-  { img: "/pic5.jpg",  description: "Another year older,cuter and brighter than before 🥹May life surprise you with happiness and so much more🎁" },
-  { img: "/pic6.jpg",  description: "May your smile always shine brighter than the stars above ✨And may your life be filled with endless love 💗" },
+  { img: "/pic8.jpg", description: "May you always be loved more than words can say And may beautiful moments find you every day 🌹" },
+  { img: "/pic8.jpg", description: "May every little dream of yours come true And may happiness always find its way to you 💕" },
+  { img: "/pic8.jpg",  description: "You deserve all the magic this world can bring ✨May your heart always have a reason to sing 🎶" },
+  { img: "/pic8.jpg",  description: "May your days be filled with giggles and sunshine ☀️And may your life stay beautiful and divine 💖" },
+  { img: "/pic8.jpg",  description: "Another year older,cuter and brighter than before 🥹May life surprise you with happiness and so much more🎁" },
+  { img: "/pic8.jpg",  description: "May your smile always shine brighter than the stars above ✨And may your life be filled with endless love 💗" },
 ];
 
 export default function Memories({ goToWish }) {
